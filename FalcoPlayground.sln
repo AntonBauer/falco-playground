@@ -7,6 +7,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FalcoPlayground.Web", "Falc
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FalcoPlayground.Domain", "FalcoPlayground.Domain\FalcoPlayground.Domain.fsproj", "{6640D727-E710-4411-B6DA-5D0F768CF79D}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FalcoPlayground.DataAccess", "FalcoPlayground.DataAccess\FalcoPlayground.DataAccess.fsproj", "{18114EF9-9DAA-4150-BA31-8B237E0D48A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{6640D727-E710-4411-B6DA-5D0F768CF79D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6640D727-E710-4411-B6DA-5D0F768CF79D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6640D727-E710-4411-B6DA-5D0F768CF79D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18114EF9-9DAA-4150-BA31-8B237E0D48A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18114EF9-9DAA-4150-BA31-8B237E0D48A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18114EF9-9DAA-4150-BA31-8B237E0D48A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18114EF9-9DAA-4150-BA31-8B237E0D48A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
