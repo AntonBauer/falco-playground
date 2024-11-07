@@ -1,6 +1,6 @@
 ﻿namespace FalcoPlayground.Domain
 
-module Say =
+module ToDo =
     open System
 
     type ToDoId = ToDoId of Guid
