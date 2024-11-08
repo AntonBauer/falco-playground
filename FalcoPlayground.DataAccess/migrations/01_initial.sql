@@ -1,0 +1,7 @@
+CREATE SCHEMA IF NOT EXISTS playground;
+
+CREATE TABLE IF NOT EXISTS playground.ToDo(
+    Id UUID PRIMARY KEY,
+    Header VARCHAR(512) NOT NULL,
+    Description VARCHAR(1024)
+);

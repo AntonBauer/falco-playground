@@ -1,10 +1,16 @@
 module FalcoPlayground.Web.Program
 
-open Falco
-open Falco.Routing
 open Falco.HostBuilder
+open FalcoPlayground.DataAccess
 
-[<EntryPoint>]
-let main args =
-    webHost args { endpoints Endppoints.ToDo.crud }
-    0
+let config = configuration[||] {
+    required_json "appsettings.json"
+    optional_json "appsettings.Development.json"
+}
+
+config.GetSection("ConnectionStrings:Playground").Value
+|> Migrator.migrate 
+
+webHost[||]{
+    endpoints Endppoints.ToDo.crud
+}

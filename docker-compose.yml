@@ -6,7 +6,7 @@ services:
     environment:
       - POSTGRES_PASSWORD=local_password
       - POSTGRES_USER=local_user
-      - POSTGRES_DB=local_db
+      - POSTGRES_DB=playground_db
     volumes:
       - pgdata:/var/lib/postgresql/data
 

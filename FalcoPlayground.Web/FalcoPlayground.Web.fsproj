@@ -12,5 +12,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FalcoPlayground.Domain\FalcoPlayground.Domain.fsproj" />
+    <ProjectReference Include="..\FalcoPlayground.DataAccess\FalcoPlayground.DataAccess.fsproj" />
   </ItemGroup>
 </Project>
