@@ -3,7 +3,12 @@
 module ToDo =
     open System
 
-    type ToDoId = ToDoId of Guid
+    module ToDoId =
+        type ToDoId = ToDoId of Guid
+        let createNew = ToDoId(Guid.NewGuid())
+        let value (ToDoId id) = id
+
+    open ToDoId
 
     type ToDoItem =
         { Id: ToDoId
@@ -11,7 +16,7 @@ module ToDo =
           Description: string option }
 
     let create name description =
-        { Id = ToDoId(Guid.NewGuid())
+        { Id = createNew
           Header = name
           Description =
             match String.IsNullOrEmpty description with

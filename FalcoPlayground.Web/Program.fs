@@ -12,5 +12,5 @@ config.GetSection("ConnectionStrings:Playground").Value
 |> Migrator.migrate 
 
 webHost[||]{
-    endpoints Endppoints.ToDo.crud
+    endpoints (Endppoints.ToDo.crud config)
 }

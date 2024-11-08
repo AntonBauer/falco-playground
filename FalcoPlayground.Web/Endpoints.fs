@@ -6,4 +6,5 @@ module Endppoints =
     open Falco.Routing
 
     module ToDo =
-        let crud = [ all "/todos" [ GET, ToDoHandlers.getAll; POST, ToDoHandlers.create ] ]
+        let crud config =
+            [ all "/todos" [ GET, ToDoHandlers.getAll config; POST, ToDoHandlers.create config ] ]

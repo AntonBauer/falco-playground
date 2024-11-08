@@ -4,6 +4,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ToDoRepository.fs" />
     <Compile Include="Migrator.fs" />
   </ItemGroup>
   <ItemGroup>
