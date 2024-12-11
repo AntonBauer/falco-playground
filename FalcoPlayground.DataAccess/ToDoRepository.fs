@@ -22,9 +22,9 @@ module ToDoRepository =
                 |> Sql.connect
                 |> Sql.query saveQuery
                 |> Sql.parameters
-                    [ "id", (Sql.uuid (ToDoId.value todoItem.Id));
-                      "header", Sql.string todoItem.Header;
-                      "description", descriptionExtractor todoItem ]
+                    [ "@id", (Sql.uuid (ToDoId.value todoItem.Id));
+                      "@header", Sql.string todoItem.Header;
+                      "@description", descriptionExtractor todoItem ]
                 |> Sql.executeNonQuery
                 |> ignore
 
