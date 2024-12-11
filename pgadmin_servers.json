@@ -1,0 +1,17 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "ToDos",
+            "Group": "Servers",
+            "Host": "database",
+            "Port": 5432,
+            "MaintenanceDB": "postgres",
+            "Username": "local_user",
+            "UseSSHTunnel": 0,
+            "TunnelPort": "22",
+            "TunnelAuthentication": 0,
+            "KerberosAuthentication": false,
+            "ConnectionParameters": {}
+        }
+    }
+}
